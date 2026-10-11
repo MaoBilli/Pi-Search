@@ -14,11 +14,13 @@ No libraries needed: everything is plain Python (the standard library only).
 | `100m_pi_creator.py` | Makes **100,000,000** digits of pi with **Chudnovsky's formula** and saves them to `my_pi_100m.txt`. Checks the result against a SHA-256 fingerprint. |
 | `1m_pi_creator.py` | Makes **1,000,000** digits of pi with **Machin's formula** (arctan) and saves them to `my_pi_1m.txt`. |
 | `125k_pi_creator.py` | Makes **125,000** digits of pi with Machin's formula and saves them to `my_pi_125k.txt`. |
-| `my_pi_125k.txt` | 125,000 digits of pi (about 125 KB). |
-| `my_pi_1m.txt` | 1,000,000 digits of pi (about 1 MB). |
-| `my_pi_100m.txt` | 100,000,000 digits of pi (about 100 MB). Too big for a normal GitHub repo, so it is **not included**: make it with `100m_pi_creator.py`. |
+| `my_pi_125k.txt` | 125,000 digits of pi (about 125 KB). *Not included: make it with `125k_pi_creator.py`.* |
+| `my_pi_1m.txt` | 1,000,000 digits of pi (about 1 MB). *Not included: make it with `1m_pi_creator.py`.* |
+| `my_pi_100m.txt` | 100,000,000 digits of pi (about 100 MB). **Not included**: it is far over GitHub's 25 MB file limit for uploads, so I couldn't put it here. Make it with `100m_pi_creator.py`. |
 | `word_to_number_function.py` | The word-to-digits function on its own (A=1, B=2, ... Z=26), written and tested separately before it went into `search.py`. |
 | `Lesson 1.py`, `Lesson 2.py`, `Lesson 3.py` | The first steps I wrote while learning how to calculate pi (see [How I built it](#how-i-built-it)). |
+
+> **Why aren't the `.txt` files here?** GitHub only lets you upload files up to 25 MB through its website, and the 100 million digit file is about 100 MB. So the digit files are not included in this repo. You make them yourself by running the creator files below (the 125,000 digit one takes about 10 seconds), and the fingerprints in [Check your digits](#check-your-digits) prove that yours are correct.
 
 All digit files hold the digits **after the decimal point**, in one long line with no spaces. Digit 1 is the 1 in 3.14159...
 
